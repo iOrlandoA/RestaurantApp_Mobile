@@ -9,10 +9,11 @@ import {
     } from '@ionic/react';
 import { useState } from 'react';
 type Props={
-    get:any;
+    data:any;
+    refetch:any;
 }
 
-const FormLoginUser= ({ get }:Props) => {
+const FormLoginUser= ({ data, refetch}:Props) => {
     const [presentAlert]= useIonAlert();
     const [user, setUser]= useState({
         email:""
@@ -48,6 +49,14 @@ const FormLoginUser= ({ get }:Props) => {
                                 buttons: ["OK"]
                             })
                         }else{
+                            refetch();
+                            {data?.map((dataUser: any)=>{
+                                if(dataUser.email===user.email) {
+                                    if(dataUser.password===user.password){
+                                        //Abrir el menu con el id de usuario
+                                    }
+                                } 
+                            })}
                             
                         }
                     }}>Log In</IonButton>
