@@ -3,9 +3,9 @@ import {
     ,IonInput
     ,IonCardHeader
     ,IonCardContent
-    ,IonCardTitle,
-    IonButton,
-    useIonAlert
+    ,IonCardTitle
+    ,IonButton
+    ,useIonAlert
     } from '@ionic/react';
 import { useState } from 'react';
 type Props={
