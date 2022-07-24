@@ -21,6 +21,7 @@ type Props={
     cartList:any;
 }
 
+
 const listComponentDishes= ({ dishList, refetch }:Props) => {
     
     return (
@@ -45,7 +46,12 @@ const listComponentDishes= ({ dishList, refetch }:Props) => {
                                         <p>Price : {dish.price}</p>
                                     </IonCardContent>
                                     <IonItem>
-                                        
+                                        <IonInput>
+
+                                        </IonInput>
+                                        <IonButton>
+
+                                        </IonButton>
                                     </IonItem>
                                     
                                     
